@@ -5,43 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSFundamentals</title>
     <link href="./Assets/stylesheet.css" rel="stylesheet" />
-    <title>Document</title>
 </head>
 
+<!--The html code will be structured into 4 containers. The first container will be the Start Test Container
+where the User will be prompted to press a button to start the test. The second container will hold the question
+and answers. The third container will hold the results of the test> The fourth container will hold the tally of 
+scores.-->
+
 <body>
-    <!-- Window advising the user to press the button to begin the test-->
     <div class="wrapper">
         <header>
-            <h1>Welcome to the Test</h1>
+            <h1 id="heading">Welcome to the Test</h1>
+            <div id="timer"></div>
         </header>
+        <!--First container. Opening page and instructions to the test taker.-->
         <div class="card">
-            <button id="start" class="btn">Start</button>
-        </div>
-    </div>
-    <div class="questions">
-        <header>
-            <h1>This is the place where we will add the text for question 1</h1>
-        </header>
-        <header>
-            <h1>This is the place where we will add the text for question 2</h1>
-        </header>
-        <header>
-            <h1>This is the place where we will add the text for question 3</h1>
-        </header>
-        <header>
-            <h1>This is the place where we will add the text for question 4</h1>
-        </header>
-        <header>
-            <h1>This is the place where we will add the text for question 5</h1>
-        </header>
-        <header>
-            <h1>This is the place where we will add the text for question 6</h1>
-        </header>
-    </div>
+            <div id="startContainer">
+                <div id="question" class="card-header">
+                    <h2>Kindly press the start button to begin the test</h2>
+                    <p>Once you press the start button, you will have 60 sec. to complete the test. For every correct answer, you will get 20 points; but for every wrong answer, you will receive a 20 sec. deduction from your time.</p>
+                    <div class="card-footer-center">
+                        <button id="start" class="btn">Start</button>
+                    </div>
+                </div>
+                <!--Second container. Provides basic structure to the "question" card. The associated js code makes the container dynamic. This part of the container holds the question.-->
+                <div id='questionContainer' class="hide">
+                    <div class="card-header">
+                        <h3 id="quiz_question"></h3>
+                    </div>
+                    <!--This section of the "question" card holds the answers to the question.-->
+                    <div class="card-footer">
+                        <div>
+                            <button id="answer1" class="answer" onclick="checkAnswer(0)"></button>
+                        </div>
+                        <div>
+                            <button id="answer2" class="answer" onclick="checkAnswer(1)"></button>
+                        </div>
+                        <div>
+                            <button id="answer3" class="answer" onclick="checkAnswer(2)"></button>
+                        </div>
+                        <div>
+                            <button id="answer4" class="answer" onclick="checkAnswer(3)"></button>
+                        </div>
+                    </div>
 
-    <!--This ties the js file with the html-->
-    <script src="Assets/script.js"></script>
+                    <div id="lastAnswer"></div>
+                </div>
+                <!--Third container. Holds the calculations of points and time deductions. Associated js file makes it dynamic.-->
+                <div id='resultContainer' class="hide">
+                    <div class="card-header">
+                        <h3 id="score"></h3>
+                    </div>
+                    <div class="card-body">
+                        <label for="initial">Please input your initial: </label>
+                        <input type="text" id='initial' onkeyup="checkEmpty()" />
+                        <button id="submitInitial" class="submitBtn" onclick="submitInitial()" disabled>Submit</button>
+                    </div>
+                </div>
+                <!--Fourth container. Retains the information from the calculations produced in the third container until they are cleared.-->
+                <div id='highScoreContainer' class="hide">
+                    <div class="card-body">
+                        <div id="ranking">
+
+                        </div>
+                    </div>
+                    <div class="card-footer-center">
+                        <button id="goback" class="btn" onclick="goBack()">Go Back</button>
+                        <button id="clearHistory" class="btn" onclick="resetHighScore()">Clear High Scores</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--This ties the js file with the html.-->
+        <script src="Assets/script.js"></script>
 </body>
 
 </html>

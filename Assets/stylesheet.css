@@ -15,12 +15,14 @@ body,
 body {
     font-family: sans-serif;
     background-color: #f9fbfd;
+    min-width: 484px;
 }
 
 .wrapper {
     padding-top: 30px;
-    padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
 }
 
 header {
@@ -31,10 +33,74 @@ header {
 }
 
 .card {
+    border-radius: 5px;
+    border-width: 1px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
+    max-width: 800px;
+    padding: 30px 40px;
 }
+
+
+/* .card-header::after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+} */
+
+.card-body {
+    min-height: 100px;
+}
+
+.card-footer {
+    text-align: left;
+}
+
+
+/* .card-footer::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+} */
+
+
+/* .card-footer::after {
+    content: ' ';
+    display: block;
+    clear: both;
+} */
+
+.card-footer-center {
+    text-align: center;
+}
+
+
+/* .card-footer-center::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+} */
+
+.card-footer-answer {
+    text-align: left;
+    font-style: italic;
+}
+
+
+/* .card-footer-answer::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+} */
 
 .btn {
     border: none;
@@ -57,6 +123,61 @@ header {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: hsl(0, 93%, 22%);
+}
+
+.hide {
+    display: none;
+}
+
+button[disabled] {
+    cursor: default;
+    background: #c0c7cf;
+}
+
+.submitBtn {
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 2px 2px 2px 2px;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submitBtn:hover:enabled {
+    background-color: hsl(360, 91%, 36%);
+}
+
+.answer {
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background-color: hsl(360, 91%, 36%);
+}
+
+.highScore {
+    background-color: hsl(360, 91%, 36%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 1px;
+}
+
+
+/* 
 .question {
     padding-top: 30px;
     padding-left: 20px;
@@ -69,9 +190,7 @@ header {
     padding-top: 0px;
     color: hsl(206, 17%, 28%);
 }
-
-
-/* 
+  
 .card-header::after {
     content: " ";
     display: block;
