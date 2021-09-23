@@ -1,7 +1,7 @@
 # 04 Web APIs: Code Quiz
-The purpose of this challenge is to create a test to be taken by Bootcamp students to gauge their knowledge of Javascript fundamentals. The test will be made up of 6 multiple-choice questions and the student will be given 60 seconds to complete the test. Once the student deploys the website, a landing page will open advising the student to press the start button. Once the student clicks on the start button, the first question will appear and a timer on the top right corner will apear and will be gin to count down from 60-seconds. If the student answers the question correctly, the next question will appear. If the student answers the question incorrectly, the next question will appear, but a 10 second penalty will be dedcuted from the timer, instantly reducing the amount of time the student has to complete the remaining questions.
+The purpose of this challenge is to create a test to be taken by Bootcamp students to gauge their knowledge of Javascript fundamentals. The test will be made up of 5 multiple-choice questions and the student will be given 60 seconds to complete the test. Once the student deploys the website, a landing page will open advising the student to press the start button. Once the student clicks on the start button, the first question will appear and a timer on the top right corner will apear and will be gin to count down from 60-seconds. If the student answers the question correctly, the next question will appear. If the student answers the question incorrectly, the next question will appear, but a 10 second penalty will be dedcuted from the timer, instantly reducing the amount of time the student has to complete the remaining questions.
 
-The grade of the test will be a percentage calculated using the number of questions answered correctly as the numerator and the total amount of questions (6) and the denominator. Any question left unanswered due to time running out will be graded as having been answered incorrectly.
+The grade of the test will be a percentage calculated using the number of questions answered correctly as the numerator and the total amount of question (5) and the denominator. Any question left unanswered due to time running out will be graded as having been answered incorrectly.
 
 The test will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
@@ -16,11 +16,8 @@ The acceptance criteria for this challenge requires that:
 4) When all of the questions are answered or the timer runs out of time, then the test is over;
 5) At this point, the user will be asked to enter their initials and the score will be saved.
 
-## Functionality
-Pending more progress of the code ...
-
 ## Screenshot:
-Pending more progress of the code ...
+https://github.com/rawc72/Challenge_No_4/issues/1#issue-1005541745
 
 ## Link to deployed website:
 Pending completion of the code ...
