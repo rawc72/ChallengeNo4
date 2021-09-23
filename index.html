@@ -17,7 +17,7 @@ scores.-->
 <body>
     <div class="wrapper">
         <header>
-            <h1 id="heading">Welcome to the Test</h1>
+            <h1 id="heading">Welcome to the Quiz</h1>
             <div id="timer"></div>
         </header>
         <!--First container. Opening page and instructions to the test taker.-->
@@ -25,61 +25,62 @@ scores.-->
             <div id="startContainer">
                 <div id="question" class="card-header">
                     <h2>Kindly press the start button to begin the test</h2>
-                    <p>Once you press the start button, you will have 60 sec. to complete the test. For every correct answer, you will get 20 points; but for every wrong answer, you will receive a 20 sec. deduction from your time.</p>
+                    <p>Once you press the start button, you will have 60 sec. to complete the quiz. For every correct answer, you will get 20 points; but for every wrong answer, you will receive a 20 sec. deduction from your time.</p>
                     <div class="card-footer-center">
-                        <button id="start" class="btn">Start</button>
-                    </div>
-                </div>
-                <!--Second container. Provides basic structure to the "question" card. The associated js code makes the container dynamic. This part of the container holds the question.-->
-                <div id='questionContainer' class="hide">
-                    <div class="card-header">
-                        <h3 id="quiz_question"></h3>
-                    </div>
-                    <!--This section of the "question" card holds the answers to the question.-->
-                    <div class="card-footer">
-                        <div>
-                            <button id="answer1" class="answer" onclick="checkAnswer(0)"></button>
-                        </div>
-                        <div>
-                            <button id="answer2" class="answer" onclick="checkAnswer(1)"></button>
-                        </div>
-                        <div>
-                            <button id="answer3" class="answer" onclick="checkAnswer(2)"></button>
-                        </div>
-                        <div>
-                            <button id="answer4" class="answer" onclick="checkAnswer(3)"></button>
-                        </div>
-                    </div>
-
-                    <div id="lastAnswer"></div>
-                </div>
-                <!--Third container. Holds the calculations of points and time deductions. Associated js file makes it dynamic.-->
-                <div id='resultContainer' class="hide">
-                    <div class="card-header">
-                        <h3 id="score"></h3>
-                    </div>
-                    <div class="card-body">
-                        <label for="initial">Please input your initial: </label>
-                        <input type="text" id='initial' onkeyup="checkEmpty()" />
-                        <button id="submitInitial" class="submitBtn" onclick="submitInitial()" disabled>Submit</button>
-                    </div>
-                </div>
-                <!--Fourth container. Retains the information from the calculations produced in the third container until they are cleared.-->
-                <div id='highScoreContainer' class="hide">
-                    <div class="card-body">
-                        <div id="ranking">
-
-                        </div>
-                    </div>
-                    <div class="card-footer-center">
-                        <button id="goback" class="btn" onclick="goBack()">Go Back</button>
-                        <button id="clearHistory" class="btn" onclick="resetHighScore()">Clear High Scores</button>
+                        <button id="startTest" class="btn">Start</button>
                     </div>
                 </div>
             </div>
+            <!--Second container. Provides basic structure to the "question" card. The associated js code makes the container dynamic. This part of the container holds the question.-->
+            <div id='questionContainer' class="hide">
+                <div class="card-header">
+                    <h3 id="quiz_question"></h3>
+                </div>
+                <!--This section of the "question" card holds the answers to the question.-->
+                <div class="card-footer">
+                    <div>
+                        <button id="answer1" class="answer" onclick="checkAnswer(0)"></button>
+                    </div>
+                    <div>
+                        <button id="answer2" class="answer" onclick="checkAnswer(1)"></button>
+                    </div>
+                    <div>
+                        <button id="answer3" class="answer" onclick="checkAnswer(2)"></button>
+                    </div>
+                    <div>
+                        <button id="answer4" class="answer" onclick="checkAnswer(3)"></button>
+                    </div>
+                </div>
+
+                <div id="lastAnswer"></div>
+            </div>
+            <!--Third container. Holds the calculations of points and time deductions. Associated js file makes it dynamic.-->
+            <div id='resultContainer' class="hide">
+                <div class="card-header">
+                    <h3 id="score"></h3>
+                </div>
+                <div class="card-body">
+                    <label for="initial">Please input your initial: </label>
+                    <input type="text" id='initial' onkeyup="checkEmpty()" />
+                    <button id="submitInitial" class="submitBtn" onclick="submitInitial()" disabled>Submit</button>
+                </div>
+            </div>
+            <!--Fourth container. Retains the information from the calculations produced in the third container until they are cleared.-->
+            <div id='highScoreContainer' class="hide">
+                <div class="card-body">
+                    <div id="ranking">
+
+                    </div>
+                </div>
+                <div class="card-footer-center">
+                    <button id="goback" class="btn" onclick="goBack()">Go Back</button>
+                    <button id="clearHistory" class="btn" onclick="resetHighScore()">Clear High Scores</button>
+                </div>
+            </div>
         </div>
-        <!--This ties the js file with the html.-->
-        <script src="Assets/script.js"></script>
+    </div>
+    <!--This ties the js file with the html.-->
+    <script src="Assets/script.js"></script>
 </body>
 
 </html>

@@ -20,9 +20,9 @@ body {
 
 .wrapper {
     padding-top: 30px;
-    padding-right: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 header {
@@ -42,14 +42,13 @@ header {
     padding: 30px 40px;
 }
 
-
-/* .card-header::after {
+.card-header::after {
     content: ' ';
     display: block;
     width: 100%;
     background: #e7e9eb;
     height: 2px;
-} */
+}
 
 .card-body {
     min-height: 100px;
@@ -59,48 +58,44 @@ header {
     text-align: left;
 }
 
-
-/* .card-footer::before {
+.card-footer::before {
     content: ' ';
     display: block;
     width: 100%;
     background: #e7e9eb;
     height: 2px;
-} */
+}
 
-
-/* .card-footer::after {
+.card-footer::after {
     content: ' ';
     display: block;
     clear: both;
-} */
+}
 
 .card-footer-center {
     text-align: center;
 }
 
-
-/* .card-footer-center::before {
+.card-footer-center::before {
     content: ' ';
     display: block;
     width: 100%;
     background: #e7e9eb;
     height: 2px;
-} */
+}
 
 .card-footer-answer {
     text-align: left;
     font-style: italic;
 }
 
-
-/* .card-footer-answer::before {
+.card-footer-answer::before {
     content: ' ';
     display: block;
     width: 100%;
     background: #e7e9eb;
     height: 2px;
-} */
+}
 
 .btn {
     border: none;
@@ -167,7 +162,7 @@ button[disabled] {
 }
 
 .answer:hover {
-    background-color: hsl(360, 91%, 36%);
+    background-color: hsl(0, 93%, 22%);
 }
 
 .highScore {
@@ -175,162 +170,3 @@ button[disabled] {
     color: hsl(0, 0%, 100%);
     margin-top: 1px;
 }
-
-
-/* 
-.question {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.question header {
-    text-align: left;
-    padding: 20px;
-    padding-top: 0px;
-    color: hsl(206, 17%, 28%);
-}
-  
-.card-header::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: #e7e9eb;
-    height: 2px;
-} 
-
-.card-body {
-    min-height: 100px;
-}
-
-.card-footer {
-    text-align: center;
-}
-
-.card-footer::before {
-    content: " ";
-    display: block;
-    width: 100%;
-    background: #e7e9eb;
-    height: 2px;
-}
-
-.card-footer::after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-
-.btn {
-    border: none;
-    background-color: hsl(360, 91%, 36%);
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
-    color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin-top: 16px;
-    margin-right: 16px;
-    margin-bottom: 16px;
-    margin-left: 20px;
-    padding-top: 14px;
-    padding-right: 34px;
-    padding-bottom: 14px;
-    padding-left: 34px;
-    text-align: center;
-    cursor: pointer;
-}
-
-button[disabled] {
-    cursor: default;
-    background: #c0c7cf;
-}
-
-.float-right {
-    float: right;
-}
-
-#password {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 85px;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px dashed #c0c7cf;
-    border-radius: 6px;
-    resize: none;
-    overflow: hidden;
-}
-
-.item {
-    display: flex;
-    width: 350px;
-    justify-content: space-between;
-}
-
-.submit {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.smallbtn {
-    border: none;
-    background-color: hsl(360, 91%, 36%);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
-    color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 16px;
-    line-height: 18px;
-    margin-top: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.error {
-    color: hsl(360, 91%, 36%);
-    ;
-}
-
-.errorDiv {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-dialog {
-    border: none;
-    padding: 20px 30px;
-}
-
-@media (max-width: 690px) {
-    .btn {
-        font-size: 1rem;
-        margin: 16px 0px 0px 0px;
-        padding: 10px 15px;
-    }
-    #password {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .btn {
-        font-size: 0.8rem;
-    }
-} */
